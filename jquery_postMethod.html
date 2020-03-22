@@ -1,0 +1,124 @@
+		
+		<!DOCTYPE HTML>
+		<html lang="en-US">
+		<head>
+			<meta charset="UTF-8">
+			<title>jquery</title>
+			<link rel="stylesheet" href="css/jquery-ui.css" />
+			<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+			<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+			<script type="text/javascript" src="js/jquery-ui.js"></script>
+			<style type="text/css">
+			body{
+			padding:0;
+			margin:0;
+			font-size:20px;
+			}
+			.main{
+			height:600px;
+			width:950px;
+			background:#342A25;
+			margin:10px auto;
+			color:white;
+			padding:25px;
+			}
+			#murad{
+			height:400px;
+			width:900px;
+			background:white;
+			color:black;
+			margin-left:25px;
+			
+			}
+		   .text{
+			    font-size: 25px;
+				border: 54px solid black;
+				padding: 35px;
+				color: aqua;
+				border-radius: 5px;
+				text-align: center;
+			 }
+			  #tumi{
+			  color:black;
+			  } 
+			</style>
+			
+		</head>
+		<body>
+		
+		<script type="text/javascript">
+          $(document).ready(function(){
+
+		   $("#my_form").submit(function(){
+		   $.post("contant.php",$("#my_form").serialize(),function(data){
+		   
+		   $("#tumi").html(data);
+		  	});
+		   return false;
+		   });
+		  
+		  
+			
+		   });
+		  
+		  
+		  
+		  
+		  
+		  
+		 
+	
+		</script>
+		<div class="main">
+			
+		   <h2 style="text-align:center;">Jquery And Ajex function()</h2>
+		  
+		   <div id="murad">
+		   
+		   <form action="" id='my_form'>
+		   <div id="tumi"></div>
+		     <table>
+			     <tr>
+				   <td>Name</td>
+				   <td><input type="text" name="name" /></td>
+				 </tr>
+				 <tr>
+				   <td>skill</td>
+				   <td><input type="text" name="skill" /></td>
+				 </tr>
+				 <tr>
+				   <td>Email</td>
+				   <td><input type="text" name="email" /></td>
+				 </tr>
+				 <tr>
+				   <td></td>
+				   <td><input type="submit" value="submit" /></td>
+				 </tr>
+			 </table>
+		   
+		   </form>
+		   
+		   </div>
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		 <div class="footer">
+		  <h2 style="text-align:center;"> Nur Mohammed Murad</h2>
+		 </div>  
+		</div>   
+		</body>
+		</html>
